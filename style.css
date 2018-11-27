@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+	font-family: Sans-Serif;
+}
+
+body {
+	background-color: black;
+	overflow: hidden;
+}
+
+#button_play {
+	opacity: 0.3;
+	z-index: 0;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 70px;
+	font-size: 50px;
+	color:white;
+}
+
+#button_play:active, #button_play:hover {
+	opacity: 1;
+}
+
+#xyInfo {	
+	z-index: -1;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-size: 40px;
+	color: white;
+	pointer-events: none;
+
+	top: 50vh;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.xycontroller {
+	opacity: 0.5;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border-color: blue;
+	border-width: 4px;
+	border-style: solid;
+	background-color: black;
+	color: white;
+	position: absolute;
+	left: 150px;
+	top: 150px;
+	text-align: center;
+}
+
+.infobox {
+	font-size: 20px;
+	position:absolute;
+	text-align: center;
+	top: -60px;	
+	left: -75px;
+	width: 200px;
+}
+
+.inMotion {
+	opacity: 1;
+}
+
+#xyAttRel {
+	border-color: green;
+}
+
+#xyAttRel.shiny {
+	box-shadow: 0px 0px 100px 10px lightgreen;
+	border-color: white;
+}
+
+#xyOctTra {
+	border-color: orange;
+}
+
+#xyOctTra.shiny {
+	box-shadow: 0px 0px 100px 10px yellow;
+	border-color: white;
+}
+
+#xyDetDyn {
+	border-color: red;
+}
+
+#xyDetDyn.shiny {
+	box-shadow: 0px 0px 100px 10px pink;
+	border-color: white;
+}
+
+#xyTemSca {
+	border-color: blue;
+}
+
+#xyTemSca.shiny {
+	box-shadow: 0px 0px 100px 10px lightblue;
+	border-color: white;
+}
+
+.shiny {
+	box-shadow: 0px 0px 100px 10px lightgreen;
+	border-color: white;
+}
+
+#canvas {
+	width: 100%;
+	height: 100vh;
+	display:block;
+}
